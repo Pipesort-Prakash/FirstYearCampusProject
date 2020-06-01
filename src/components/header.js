@@ -5,10 +5,16 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#003e7e`,
       marginBottom: `1.45rem`,
+      display: "flex",
+      flexDirection: "row"
     }}
   >
+    <div style={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
+      <img src={require("../images/logo.svg")} style={{ 
+        background:"white", width: `300px`, margin:0}}/>
+    </div>
     <div
       style={{
         margin: `0 auto`,
@@ -24,7 +30,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          First year campus coach project
         </Link>
       </h1>
     </div>
